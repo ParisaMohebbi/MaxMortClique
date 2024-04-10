@@ -12,9 +12,4 @@ Authors: Parisa Vaghfi Mohebbi, Yajun Lu, Zhuqi Miao, Balabhaskar Balasundaram, 
 * In the MILP folder:
   
   - The Python code "MILP.py" solves Model (6) in the paper.
- 
-* In the data folder:
-  
-  - Small samples up to size 50K are available.
-  - Edgelist is accessible.
 
