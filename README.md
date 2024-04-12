@@ -12,4 +12,10 @@ Authors: Parisa Vaghfi Mohebbi, Yajun Lu, Zhuqi Miao, Balabhaskar Balasundaram, 
 
    - The Python code "MBK.py" finds lethal (marginal) cliques based on Algorithm (1) in the paper.
    - The file "Results of BK.xlsx" reports comprehensive results of running Algorithm (1) for all samples and the full dataset.
+ 
+* In the Data folder:
+  
+  - The file "Comorbidity_Network_SCI=0.05.edgelist" is the comorbidity graph edgelist.
+  - Small samples 1K, 5K, and 50K are included.
+  - The large datasets (500K and 10.6 million) are available upon request.
 
