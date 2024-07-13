@@ -81,12 +81,12 @@ def update_priority_queue(mu, clique):
 
 ### The Modified Bron-Kerbosch ###
 def solve(graph, b, data, A, X, lb, muStar):
-    def XBron_Kerbosch(C, L, S, den):
+    def XBron_Kerbosch(C, L, den):
         global fixed_vertices
         global muStar
         global calls  
         calls += 1 
-        if len(C) == b or L.union(S) == set():
+        if len(C) == b or L == set():
             return
           
         for v in list(L):
@@ -94,9 +94,9 @@ def solve(graph, b, data, A, X, lb, muStar):
             if len(newden) >= lb:
                 muStar = len(X.intersection(newden))/(len(newden))
                 update_priority_queue(muStar, C.union({v}))
-                XBron_Kerbosch(C.union({v}), L.intersection(graph.neighbors(v)), S.intersection(graph.neighbors(v)), newden)
+                XBron_Kerbosch(C.union({v}), L.intersection(graph.neighbors(v)), newden)
             L.remove(v)
-            S.add(v)
+            
 
     C = set()                                                                   # Initialize with "fixed_vertices"
     
@@ -106,8 +106,6 @@ def solve(graph, b, data, A, X, lb, muStar):
 #     for vertex in fixed_vertices[0:]:
 #         L.intersection_update(graph.neighbors(vertex))
 # =============================================================================
-        
-    S = set()
     
     den = set(data.keys())    
     ## Uncomment the below lines for finding lethal cliques with fixed diseases
@@ -116,7 +114,7 @@ def solve(graph, b, data, A, X, lb, muStar):
 #         den.intersection_update(A[vertex])
 # =============================================================================
                                          
-    XBron_Kerbosch(C, L, S, den)
+    XBron_Kerbosch(C, L, den)
     return heapq.nlargest(C_max_size, C_top) 
 
 ### Main Function ###
