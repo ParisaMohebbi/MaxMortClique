@@ -1,6 +1,6 @@
 # "Identifying Most Lethal Cliques in Disease Comorbidity Graphs"
 
-Submitted to INFORMS Journal on Computing
+Submitted to IISE Transactions on Healthcare Systems Engineering
 
 Authors: Parisa Vaghfi Mohebbi, Yajun Lu, Zhuqi Miao, Balabhaskar Balasundaram, Pankush Kalgotra, Ramesh Sharda
      
