@@ -129,12 +129,12 @@ def main():
         excluded_cliques.append(clique)
         clique_sizes.append(len(clique))
 
-        ## Remove nodes and edges of the clique
+        ## THIS WORKS BUT IT IS WRONG ## Remove nodes and edges of the clique, 
 # =============================================================================
 #         graph.remove_nodes_from(clique)
 # =============================================================================
-        graph.remove_edges_from([(u, v) for u in clique for v in clique if u != v])
-
+#         graph.remove_edges_from([(u, v) for u in clique for v in clique if u != v])
+# =============================================================================
 
     print("Solving Time:", time.time() - start_solve)
 
