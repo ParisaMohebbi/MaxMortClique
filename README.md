@@ -16,5 +16,5 @@ Authors: Parisa Vaghfi Mohebbi, Yajun Lu, Zhuqi Miao, Balabhaskar Balasundaram, 
 * In the Data folder:
   
   - The file "Comorbidity_Network_SCI=0.05.edgelist" is the comorbidity graph edgelist.
-  - Small samples 1K, 5K, and 50K are included.
+  - All small samples of 1000, 5000, 50000, and 100000 are included.
 
