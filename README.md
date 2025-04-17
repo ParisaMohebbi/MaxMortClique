@@ -1,8 +1,10 @@
 # "Identifying Most Lethal Cliques in Disease Comorbidity Graphs"
 
-Submitted to IISE Transactions on Healthcare Systems Engineering
+Published in IISE Transactions on Healthcare Systems Engineering
 
 Authors: Parisa Vaghfi Mohebbi, Yajun Lu, Zhuqi Miao, Balabhaskar Balasundaram, Pankush Kalgotra, Ramesh Sharda
+
+https://www.tandfonline.com/doi/abs/10.1080/24725579.2025.2473716
      
 * In the MILP folder:
   
